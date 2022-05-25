@@ -27,7 +27,7 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col" id="firstColumn">
           <form>
             <input
               class="search"
@@ -35,18 +35,21 @@
               placeholder="Enter a city"
               autocomplete="off"
               autofocus="on"
-              id="enterCity"
+              id="enter-city"
             />
-            <input type="submit" value="🔎" id="searchCity" />
+            <input type="submit" value="🔎" id="search-city" />
           </form>
-          <h1><span id="cel">14</span><sup>°C</sup></h1>
-          <button>📍</button>
+          <h1>
+            <span class="cel">14</span><sup>°C |°F</sup
+            ><span class="weather-image">✨</span>
+          </h1>
           <h2><i>Kyiv, Ukraine</i></h2>
           <h3>Thursday 15:03</h3>
-          <h4>Humidity: <span id="hum">77</span>%</h4>
-          <h4>Wind: <span id="wind">4</span> km/h</h4>
+          <h4 class="description">Clear sky</h4>
+          <h4 class="humidity">Humidity: <span id="hum">77</span>%</h4>
+          <h4 class="wind">Wind: <span id="wind">4</span> km/h</h4>
         </div>
-        <div class="col" id="days">
+        <div class="col" id="secondColumn">
           <table class="table table-borderless weather">
             <tr>
               <td>MON</td>
@@ -77,7 +80,7 @@
         </div>
       </div>
     </div>
-    <div class="link">
+    <div class="gitLink">
       <a href="https://github.com/yelyzart/weather-app">Open-source code</a> by
       Yelyzaveta Zyrianska
     </div>
