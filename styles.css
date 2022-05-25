@@ -1,0 +1,75 @@
+.container {
+  max-width: 600px;
+  border: 2px solid #939aa9;
+  margin: 20px 0 0 20px;
+  border-radius: 25px;
+}
+.col {
+  padding: 20px 20px 10px;
+}
+#days {
+  line-height: 2.4em;
+}
+form {
+  margin-top: 12px;
+}
+#enterCity {
+  border: 1px solid grey;
+  border-radius: 25px;
+  padding: 7px 15px;
+  max-width: 80%;
+  background-color: #eeeeee;
+}
+#searchCity {
+  border: none;
+  padding: 0;
+}
+button {
+  float: left;
+  margin: 0 5px 0 0;
+  border: 2px solid gray;
+  border-radius: 8px;
+  padding: 1px 7px;
+}
+sup {
+  color: #5a6275;
+  font-size: 30px;
+  vertical-align: text-top;
+}
+h1 {
+  padding-top: 5px;
+}
+#cel {
+  font-size: 80px;
+  color: #5a6275;
+  line-height: 1.2em;
+}
+h2 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #666e80;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #8790a4;
+}
+#hum,
+#wind,
+h4 {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1em;
+}
+table {
+  font-size: 20px;
+  color: #939aa9;
+}
+.weather {
+  font-size: 24px;
+  font-weight: 400;
+  color: grey;
+}
+.link {
+  margin: 0 0 0 40px;
+}
