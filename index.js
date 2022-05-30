@@ -11,6 +11,13 @@ let days = [
   "Saturday",
 ];
 
+if (hours < 10) {
+    hours = `0${hours}`;
+  }
+if (minutes < 10) {
+    minutes = `0${minutes}`;
+
+    
 let day = days[now.getDay()];
 let current = document.querySelector("h3");
 current.innerHTML = `${day} ${hour}:${minutes}`;
