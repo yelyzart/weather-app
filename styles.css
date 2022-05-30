@@ -40,7 +40,7 @@ h4 {
   border: 2px solid #939aa9;
   margin: 20px 0 0 20px;
   border-radius: 25px;
-  background-color: #dce4fd;
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 .temperature {
   font-size: 80px;
@@ -81,6 +81,7 @@ h4 {
 #search-city {
   border: none;
   padding: 0;
+  background-color: #b5e2f7;
 }
 #description {
   text-transform: capitalize;

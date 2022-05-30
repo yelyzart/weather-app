@@ -17,7 +17,6 @@ if (hours < 10) {
 if (minutes < 10) {
     minutes = `0${minutes}`;
 
-    
 let day = days[now.getDay()];
 let current = document.querySelector("h3");
 current.innerHTML = `${day} ${hour}:${minutes}`;
