@@ -2,14 +2,17 @@ h1 {
   padding-top: 5px;
   margin-bottom: 0;
 }
+a {
+  text-decoration: none;
+}
 h2 {
   font-size: 25px;
   font-weight: 500;
   color: #666e80;
+  font-style: italic;
 }
 sup {
-  font-size: 25px;
-  color: #5a6275;
+  font-size: 20px;
   vertical-align: text-top;
 }
 h3 {
@@ -21,12 +24,16 @@ table {
   font-size: 20px;
   color: #939aa9;
 }
+img {
+  max-width: 80px;
+  float: left;
+}
 .hum,
 .wind,
 h4 {
   font-size: 16px;
   font-weight: 300;
-  line-height: 1em;
+  line-height: 0.5em;
 }
 .container {
   max-width: 550px;
@@ -35,11 +42,33 @@ h4 {
   border-radius: 25px;
   background-color: #dce4fd;
 }
+.temperature {
+  font-size: 80px;
+  color: #5a6275;
+  line-height: 1.2em;
+}
+.weather {
+  font-size: 24px;
+  font-weight: 400;
+  color: grey;
+}
+.gitLink {
+  margin: 0 0 0 40px;
+  font-size: 15px;
+}
+.celsius {
+  color: #5a6275;
+  cursor: default;
+  text-decoration: none;
+}
+.celsius:hover {
+  color: none;
+}
 #firstColumn {
   padding: 20px 10px 5px 20px;
 }
 #secondColumn {
-  line-height: 2.5em;
+  line-height: 2.2em;
   padding: 20px 20px 5px 5px;
 }
 #enter-city {
@@ -53,17 +82,6 @@ h4 {
   border: none;
   padding: 0;
 }
-.cel {
-  font-size: 80px;
-  color: #5a6275;
-  line-height: 1.2em;
-}
-.weather {
-  font-size: 24px;
-  font-weight: 400;
-  color: grey;
-}
-.gitLink {
-  margin: 0 0 0 40px;
-  font-size: 15px;
+#description {
+  text-transform: capitalize;
 }

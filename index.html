@@ -40,14 +40,24 @@
             <input type="submit" value="🔎" id="search-city" />
           </form>
           <h1>
-            <span class="cel">14</span><sup>°C |°F</sup
-            ><span class="weather-image">✨</span>
+            <img
+              src=" http://openweathermap.org/img/wn/10d@2x.png"
+              id="weather-icon"
+            />
+            <span class="temperature">14</span
+            ><sup
+              ><a href="" class="celsius">°C </a>|<a href="" class="fahrenheit"
+                >°F</a
+              ></sup
+            >
           </h1>
-          <h2><i>Kyiv, Ukraine</i></h2>
+          <h2>
+            <span id="city">Kyiv</span>, <span class="country">Ukraine</span>
+          </h2>
           <h3>Thursday 15:03</h3>
-          <h4 class="description">Clear sky</h4>
-          <h4 class="humidity">Humidity: <span id="hum">77</span>%</h4>
-          <h4 class="wind">Wind: <span id="wind">4</span> km/h</h4>
+          <h4 id="description">Clear sky</h4>
+          <h4>Humidity: <span class="humidity">77</span>%</h4>
+          <h4>Wind: <span class="wind">4</span> km/h</h4>
         </div>
         <div class="col" id="secondColumn">
           <table class="table table-borderless weather">
@@ -81,8 +91,8 @@
       </div>
     </div>
     <div class="gitLink">
-      <a href="https://github.com/yelyzart/weather-app">Open-source code</a> by
-      Yelyzaveta Zyrianska
+      <a href="https://github.com/yelyzart/weather-app">Open-source code</a>
+      by Yelyzaveta Zyrianska
     </div>
     <script src="index.js"></script>
   </body>
