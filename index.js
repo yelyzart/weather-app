@@ -58,7 +58,7 @@ function enterC(event) {
   searchCity(searchInput.value);
 }
 
-function displayfahrenheitElem(event) {
+function displayFahrenheitElem(event) {
   event.preventDefault();
   celsius.classList.remove("celsius");
   fahrenheit.classList.add("celsius");
@@ -66,7 +66,7 @@ function displayfahrenheitElem(event) {
   let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
   temp.innerHTML = Math.round(fahrenheitTemp);
 }
-function displaycelsiusElem(event) {
+function displayCelsiusElem(event) {
   event.preventDefault();
   fahrenheit.classList.remove("celsius");
   celsius.classList.add("celsius");
@@ -78,9 +78,7 @@ let celsiusTemp = null;
 
 let inputForm = document.querySelector("form");
 inputForm.addEventListener("submit", enterC);
-
 let fahrenheit = document.querySelector("a.fahrenheit");
-fahrenheit.addEventListener("click", displayfahrenheitElem);
-
+fahrenheit.addEventListener("click", displayFahrenheitElem);
 let celsius = document.querySelector("a.celsius");
-celsius.addEventListener("click", displaycelsiusElem);
+celsius.addEventListener("click", displayCelsiusElem);
