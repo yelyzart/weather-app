@@ -11,7 +11,7 @@ let days = [
   "Saturday",
 ];
 
-if (hours < 10) {
+if (hour < 10) {
   hours = `0${hours}`;
 }
 if (minutes < 10) {
