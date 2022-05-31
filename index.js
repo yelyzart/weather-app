@@ -81,4 +81,4 @@ inputForm.addEventListener("submit", enterC);
 let fahrenheit = document.querySelector("a.fahrenheit");
 fahrenheit.addEventListener("click", displayFahrenheitElem);
 let celsius = document.querySelector("a.celsius");
-celsius.addEventListener("click", displayCelsiusElem);
+celsius.addEventListener("click", displayCelsiusElem)
