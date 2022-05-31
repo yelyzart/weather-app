@@ -12,10 +12,11 @@ let days = [
 ];
 
 if (hours < 10) {
-    hours = `0${hours}`;
-  }
+  hours = `0${hours}`;
+}
 if (minutes < 10) {
-    minutes = `0${minutes}`;
+  minutes = `0${minutes}`;
+}
 
 let day = days[now.getDay()];
 let current = document.querySelector("h3");
@@ -28,7 +29,7 @@ function getInformation(response) {
   let country = document.querySelector("span.country");
   let description = document.querySelector("#description");
   let humidity = document.querySelector("span.humidity");
-  let windspeed = document.querySelector("span.wind");
+  let windSpeed = document.querySelector("span.wind");
   let weatherIcon = document.querySelector("#weather-icon");
 
   celsiusTemp = response.data.main.temp;
@@ -37,12 +38,14 @@ function getInformation(response) {
   country.innerHTML = response.data.sys.country;
   description.innerHTML = response.data.weather[0].description;
   humidity.innerHTML = response.data.main.humidity;
-  windspeed.innerHTML = response.data.wind.speed;
+  windSpeed.innerHTML = response.data.wind.speed;
   weatherIcon.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 }
+
+let celsiusTemp = null;
 
 function searchCity(city) {
   let key = "7462c8bafebf7d5e231ed68152a3e97e";
@@ -83,5 +86,3 @@ function displayCelsiusElem(event) {
 
 let celsius = document.querySelector("a.celsius");
 celsius.addEventListener("click", displayCelsiusElem);
-
-let celsiusTemp = null;
