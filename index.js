@@ -123,3 +123,5 @@ function displayCelsiusElem(event) {
 
 let celsius = document.querySelector("a.celsius");
 celsius.addEventListener("click", displayCelsiusElem);
+
+searchCity("Kyiv");
